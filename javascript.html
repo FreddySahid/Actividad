@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- <script>
+        // document.write("ejemplo:" + window.location.href);
+        console.log("ejemplo:" + window.location.href);
+        const parametros = new URLSearchParams(window.location.search);
+        console.log("nombre: " + parametros.get('nom'));
+        console.log("apellido: " + parametros.get('ape'));
+        console.log("dirección: " + parametros.get('dir'));
+        console.log("teléfono: " + parametros.get('tel'));
+        document.getElementById("dir").innerHTML = parametros.get('dir');
+    </script> -->
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Cliente
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nombre:
+                <script>document.write(parametros.get('nom'));</script>
+            </li>
+            <li class="list-group-item">Apellido:
+                <script>document.write(parametros.get('ape'));</script>
+            </li>
+            <li class="list-group-item">Dirección:</li>
+            <li class="list-group-item">Teléfono:</li>
+        </ul>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Cliente
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Nombre:</li>
+                    <li class="list-group-item">Apellido:</li>
+                    <li class="list-group-item">Dirección:</li>
+                    <li class="list-group-item">Teléfono:</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span id="nom"></span></li>
+                    <li class="list-group-item"><span id="ape"></span></li>
+                    <li class="list-group-item"><span id="dir"></span></li>
+                    <li class="list-group-item"><span id="tel"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td>Apellido:</td>
+            <td>Dirección:</td>
+            <td>Teléfono:</td>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>Rojano</td>
+            <td>Xalapa</td>
+            <td>123123123</td>
+        </tr>
+        <tr>
+            <td>Alma</td>
+            <td>Cruz</td>
+            <td>Veracruz</td>
+            <td>242323423</td>
+        </tr>
+    </table>
+
+    <script>
+        // document.write("ejemplo:" + window.location.href);
+        console.log("ejemplo:" + window.location.href);
+        const parametros = new URLSearchParams(window.location.search);
+        console.log("nombre: " + parametros.get('nom'));
+        console.log("apellido: " + parametros.get('ape'));
+        console.log("dirección: " + parametros.get('dir'));
+        console.log("teléfono: " + parametros.get('tel'));
+
+        var x = document.getElementById("nom");
+        x.innerHTML = parametros.get('nom');
+        x.style.color = "Green";
+        document.getElementById("ape").innerHTML = parametros.get('ape');
+        document.getElementById("dir").innerHTML = parametros.get('dir');
+        document.getElementById("tel").innerHTML = parametros.get('tel');
+    </script>
+</body>
+
+</html>

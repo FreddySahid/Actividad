@@ -1,1 +1,11 @@
-h1{ color:navy;}
+h1 {
+    color: brown;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom-width: 2px;
+    border-bottom-style: double;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
